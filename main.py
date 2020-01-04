@@ -19,6 +19,7 @@ def jump():
         pass
     print('jump')
     #time.sleep(waitDown)
+    time.sleep(0.006)
     pyautogui.keyUp('space')
     time.sleep(0.012)
     pyautogui.keyDown('down')
@@ -29,8 +30,8 @@ def look():
     x = 190 + run_time / 1.13 #5.2
     y = 410
 
-    if x > 450:
-         x = 450
+    if x > 420:
+         x = 420
     #x = 190 + 1.045 ** run_time
 
     image = ImageGrab.grab((x, y, x+150, y+10))
